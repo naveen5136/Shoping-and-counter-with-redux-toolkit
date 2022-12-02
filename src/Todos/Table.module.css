@@ -1,0 +1,23 @@
+.table{
+    box-shadow: rgba(red, green, blue, alpha) 0px 8px 24px ;
+    border-collapse: collapse;
+    width: 100%;
+}
+.greenCircle {
+    background-color: #82d032;
+    border-radius: 50%;
+    display: inline-block;
+    height: 15px;
+    margin: auto 0;
+    width: 15px;
+    margin-right: 8px;
+  }
+  .redCircle {
+    background-color: #d03232;
+    border-radius: 50%;
+    display: inline-block;
+    height: 15px;
+    margin: auto 0;
+    width: 15px;
+    margin-right: 8px;
+  }
