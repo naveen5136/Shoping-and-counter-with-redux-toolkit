@@ -6,7 +6,7 @@ import { addToCart,deleteFromCart } from './ShoppingSlice'
 const ShopList = () => {
     const dispatch=useDispatch()
     const[products,setProducts] = useState()
-    const[productCount,setProductCount] = useState()
+    
     useEffect(()=>{
        const getProducts = async()=>{
         const getProductsResp = await fetch('https://fakestoreapi.com/products')
@@ -34,7 +34,7 @@ const ShopList = () => {
         <CardActionArea>
             <CardMedia height="340" component="img" src={product.image} />
             <CardContent>
-            <Typography variant="h6">{product.title}</Typography>
+            <Typography variant="h6" flexWrap="nowrap">{product.title}</Typography>
             <Typography >${product.price}</Typography>
             </CardContent>
             <CardActions>
